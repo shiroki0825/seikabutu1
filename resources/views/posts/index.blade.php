@@ -13,6 +13,6 @@
             パスワード<input type="password" name="passwprd" value=""><br>
             <input type="submit" name="login" value="ログイン">
         </form>
-        <a href="signin.blade.php">新規登録</a>
+        <a href="/posts/signin.blade.php">新規登録</a>
     </body>
 </html>
