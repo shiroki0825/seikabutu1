@@ -12,4 +12,9 @@ class PostController extends Controller
      return view('posts/index')->with(['posts' => $post->get()]); 
  }
  
+ public function page1 (Post $post)
+{
+    return view('posts/page1')->with(['post' => $post]);
+}
+ 
 }

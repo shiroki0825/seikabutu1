@@ -2,17 +2,28 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>ログイン画面</title>
+        <title>テニスラケットレビュー</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>ログイン画面</h1>
-        <form action="" method="POST">
-            ユーザー名<input type="text" name="username" value=""><br>
-            パスワード<input type="password" name="passwprd" value=""><br>
-            <input type="submit" name="login" value="ログイン">
-        </form>
-        <a href="signin.blade.php">新規登録</a>
-    </body>
-</html>
+        <h1>
+            テニスギア口コミサイト
+        </h1>
+        <form action="/" method="post">
+                @csrf
+                <div class="mx-1 flex">
+                    <input class="border rounded px-2 flex-auto" type="text" name="serch_message">
+                    <input class="ml-2 px-2 py-1 rounded bg-gray-500 text-white font-bold link-hover cursor-pointer" type="submit" value="検索">
+                </div>
+            </form>
+        <h2>
+            ラケット名
+        </h2>
+        <a href="posts/page1">ピュアアエロ</a>
+        <h2>
+            ガット名
+        </h2>
+        <a href="posts/page">RPMブラスト</a>
+     </body>
+</html>     
