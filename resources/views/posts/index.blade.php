@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>テニスラケットレビュー</title>
@@ -11,8 +11,7 @@
             テニスギア口コミサイト
         </h1>
         <form action="/" method="post">
-                @csrf
-                <div class="mx-1 flex">
+                <input type="hidden" name="_token" value="oi0rAYOzL0EWMkK3MFNWYRlvD179IYBvLp5YoOrX">                <div class="mx-1 flex">
                     <input class="border rounded px-2 flex-auto" type="text" name="serch_message">
                     <input class="ml-2 px-2 py-1 rounded bg-gray-500 text-white font-bold link-hover cursor-pointer" type="submit" value="検索">
                 </div>
